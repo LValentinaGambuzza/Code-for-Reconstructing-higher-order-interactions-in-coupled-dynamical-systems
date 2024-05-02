@@ -10,10 +10,10 @@ function dNdt=LVeqComplete(t,Npop,A,R,K,TriangleList)
 
 
 
-%coupling rete
+%pairwise coupling
 coup_rete=A*Npop;
 
-%coupling h.o.i.
+%h.o.i. coupling
 coup_simplicial=zeros(7,1);
 [mtrianglelist,ntrianglelist]=size(TriangleList);
 for ii=1:mtrianglelist
